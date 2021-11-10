@@ -1,0 +1,17 @@
+THISDIR = $(shell pwd)
+UM_VERSION := 0.2.7
+
+all:
+
+build_extract:
+
+build:
+
+download_um:
+
+clean:
+
+romfs:
+	$(ROMFSINST) $(THISDIR)/file/ /etc_ro/UnblockNeteaseMusicGo/
+	$(ROMFSINST) $(THISDIR)/scripts/ /usr/bin/
+	$(ROMFSINST) -p +x $(THISDIR)/UnblockNeteaseMusic /usr/bin/UnblockNeteaseMusic
